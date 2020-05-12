@@ -1,0 +1,9 @@
+| 以下のリストを作成しました
+
+ul
+  li
+    | やらないことタイトル：
+    = @task.name
+  li
+    | 詳しい説明：
+    = simple_format(@task.description)
