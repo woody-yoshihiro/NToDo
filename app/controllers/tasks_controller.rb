@@ -54,7 +54,7 @@ class TasksController < ApplicationController
 
   def destroy
     @task.destroy
-    redirect_to tasks_url, notice: "やらないこと「#{@task.name}」を削除しました。"
+    head :no_content
   end
 
   private def task_params
